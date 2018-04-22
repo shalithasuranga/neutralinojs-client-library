@@ -4,7 +4,6 @@
   |--Contributers : Add Your Name Below--|
   */
  function initXMLhttp() {
-    alert(4);
     var xmlhttp;
     if (window.XMLHttpRequest) {
         //code for IE7,firefox chrome and above
