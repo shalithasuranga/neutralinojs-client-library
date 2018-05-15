@@ -5,7 +5,7 @@ let getSettings = (s,e) => {
         url : '/settings.json',
         type : 'GET',
         success : function(data){
-            s(JSON.parse(data));
+            s(data);
         },
         errorCallback : () => {
             e();

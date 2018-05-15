@@ -77,8 +77,9 @@ function ajax(config) {
             }
         }
     }
-
-   sendString = JSON.stringify(config.data);
+   
+   if(typeof config.data != 'undefined')
+        sendString = JSON.stringify(config.data);
 
     if (config.type == "GET") {
         xmlhttp.open("GET", config.url , config.method);
