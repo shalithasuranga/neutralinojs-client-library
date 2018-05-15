@@ -81,7 +81,7 @@ function ajax(config) {
    sendString = JSON.stringify(config.data);
 
     if (config.type == "GET") {
-        xmlhttp.open("GET", config.url + "?" + sendString, config.method);
+        xmlhttp.open("GET", config.url , config.method);
         xmlhttp.send();
 
         if (config.debugLog == true)
