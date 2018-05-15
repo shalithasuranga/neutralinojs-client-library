@@ -5,7 +5,7 @@ module.exports = {
             index : './src/index.js'
         },
   output: {
-    filename: 'bundle.js',
+    filename: 'neutralino.js',
     path: path.resolve(__dirname, 'dist'),
     library: 'Neutralino',
     libraryTarget: 'var'
