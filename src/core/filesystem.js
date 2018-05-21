@@ -1,5 +1,3 @@
-import { read } from 'fs';
-
 let $ = require('../lib/minAjax.js');
 
 let createDirectory = (dirName, s, e) => {
@@ -7,7 +5,7 @@ let createDirectory = (dirName, s, e) => {
         url : '/filesystem/createDirectory',
         type : 'POST',
         data : {
-          name : dirName
+          dir : dirName
         },
         success : function(data){
             s(data);
@@ -26,7 +24,7 @@ let removeDirectory = (dirName, s, e) => {
         url : '/filesystem/removeDirectory',
         type : 'POST',
         data : {
-          name : dirName
+          dir : dirName
         },
         success : function(data){
             s(data);
@@ -44,7 +42,7 @@ let writeFile = (fileName, content, s, e) => {
         url : '/filesystem/writeFile',
         type : 'POST',
         data : {
-          name : fileName,
+          filename : fileName,
           content : content
         },
         success : function(data){
@@ -63,7 +61,7 @@ let readFile = (fileName, s, e) => {
         url : '/filesystem/readFile',
         type : 'POST',
         data : {
-          name : fileName
+          filename : fileName
         },
         success : function(data){
             s(data);
@@ -82,7 +80,7 @@ let removeFile = (fileName, s, e) => {
         url : '/filesystem/removeFile',
         type : 'POST',
         data : {
-          name : fileName
+          filename : fileName
         },
         success : function(data){
             s(data);
