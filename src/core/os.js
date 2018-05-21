@@ -18,7 +18,26 @@ let runCommand = (cmd, s, e) => {
 
 };
 
+let getEnvar = (v, s, e) => {
+    $.ajax({
+        url : '/os/getEnvar',
+        type : 'POST',
+        data : {
+          name : v
+        },
+        success : function(data){
+            s(data);
+        },
+        errorCallback : () => {
+            e();
+        }
+    
+    });
+
+};
+
 
 module.exports = {
-    runCommand : runCommand
+    runCommand : runCommand,
+    getEnvar : getEnvar
 }
