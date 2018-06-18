@@ -8,13 +8,28 @@ In electron and NWjs you have to install NodeJs, hundreds of dependence librarie
 
 This is `neutralino.js` source code written with Js and combined using webpack. client library sends kernal requests to Neutralino server with json content
 
-## Contribution and Developer Guide
+## Contribution
 
 Help Neutralino!.
 
 - Start this.
-- Fork this
+- Fork and Clone this
 - And do bug fixes or improvements and send us PR. We love it <3 
+
+## Developer Guide
+
+- Clone forked repository
+- Install Node and webpack 
+
+```bash
+$ npm install
+```
+
+- Build combined `neutralino.js`
+
+```bash
+$ npm run build
+```
 
 **Example Function :** 
 
