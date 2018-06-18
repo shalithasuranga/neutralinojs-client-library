@@ -33,6 +33,6 @@ __This function will call Neutralino server `os/getEnvar` with following json co
 
 ```json
 {
-  name : 'path'
+  "name" : "path"
 }
 ```
