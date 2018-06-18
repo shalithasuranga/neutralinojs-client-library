@@ -1,16 +1,7 @@
 # neutralino-client-library
 
-### File System
+## NeutralinoJs
 
-#### CreateDirectory(directory, successCallback, errorCallback);
+NeutralinoJs is a framework to develop apps with native functionalities and allows you to run inside web browsers. 
 
-```Javascript
-Neutralino.filesystem.createDirectory('C:\\testabc',
-  (response) => {
-    console.log(response)
-  },
-  () => {
-    console.log('error')
-  }
-);
-```
+In electron and NWjs you have to install NodeJs, hundreds of dependence libraries and also the bundled app size is large even we write `hello world` due to embedded chromium and Node runtime. Neutralino is lightweight solution for this issue.
