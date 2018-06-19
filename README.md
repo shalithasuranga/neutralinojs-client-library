@@ -12,8 +12,8 @@ This is `neutralino.js` source code written with Js and combined using webpack. 
 
 Help Neutralino!.
 
-- Start this.
-- Fork and Clone this
+- Star repo
+- Fork and Clone
 - And do bug fixes or improvements and send us PR. We love it <3 
 
 ## Developer Guide
